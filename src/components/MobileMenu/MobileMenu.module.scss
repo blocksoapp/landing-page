@@ -1,0 +1,71 @@
+.mobileMenu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    z-index: 99990;
+    overflow: hidden;
+
+    &::before {
+        content: '';
+        position: absolute;
+        bottom: -40px;
+        right: -300px;
+        width: 690px;
+        height: 890px;
+        background-image: url('../../assets/img/subtract.png');
+        transform: rotate(15deg);
+        z-index: 999;
+    }
+
+    .nav {
+        margin-top: 230.5px;
+        z-index: 9999;
+
+        a {
+            display: block;
+            margin-bottom: 30px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 120%;
+
+            &:hover {
+                font-family: 'Nexa';
+            }
+        }
+    }
+
+    .bottom {
+        margin-bottom: 62.5px;
+        z-index: 9999;
+
+        .launchBtn {
+            width: fit-content;
+            margin-inline: auto;
+            color: #fff;
+            background-image: url('../../assets/img/menu_bg.svg');
+            background-size: 100% 100%;
+            padding: 37px 67px;
+            font-family: 'Nexa';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 24px;
+            position: inherit;
+            cursor: pointer;
+            margin-bottom: 50px;
+
+            &:hover {
+                color: #000;
+                transform: scale(1.1);
+            }
+        }
+    }
+}

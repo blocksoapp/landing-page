@@ -1,0 +1,60 @@
+@import url('./assets/fonts/Nexa/font.scss');
+@import url('./assets/fonts/OpenSans/font.scss');
+
+* {
+    margin: 0;
+    padding: 0;
+    transition: all .25s;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100vh;
+    position: relative;
+    // background-color: #000;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+::-webkit-scrollbar {
+    // display: none;
+}
+
+button {
+    border: unset;
+    background: unset;
+    cursor: pointer;
+}
+
+a {
+    color: unset;
+    text-decoration: unset;
+    cursor: pointer;
+
+    &:hover {
+        font-weight: bold;
+    }
+}
+
+div,
+section {
+    box-sizing: border-box;
+}
+
+input {
+    outline: unset;
+}
+
+#root {
+    height: 100%;
+    font-family: 'OpenSans-Regular';
+    color: #000000;
+}
+
+.active-anchor {
+    font-weight: bold
+}

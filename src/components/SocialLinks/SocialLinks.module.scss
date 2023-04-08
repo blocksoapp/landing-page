@@ -1,0 +1,12 @@
+.socialLinks {
+    width: fit-content;
+    margin-inline: auto;
+    display: flex;
+    gap: 10px;
+
+    a {
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+}
